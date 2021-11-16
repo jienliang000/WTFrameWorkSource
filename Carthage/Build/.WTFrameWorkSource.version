@@ -1,0 +1,29 @@
+{
+  "commitish" : "e29bc7c4ef5feb1c1cd51f5a2adb6670121609da",
+  "iOS" : [
+    {
+      "hash" : "95f579d352d427d333053692b9a2f011a1b08e0f096ae796a6b87c0fb161840c",
+      "name" : "WTFoundation",
+      "container" : "WTFoundation.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "hash" : "545adacfa5a57b5a60f2e9eb111ec3c5e69318cb9c380dd7c62c629d6c73855b",
+      "name" : "WTFoundation",
+      "container" : "WTFoundation.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    },
+    {
+      "hash" : "b7a26dd7edc119a8955196518e8d0976d907538237388177453e9ec097ba97e4",
+      "name" : "WTUIKit",
+      "container" : "WTUIKit.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "hash" : "a7c4e51d7d7277ea514dfec371787837b0b89b2018d899e57764d0aec7cd80f9",
+      "name" : "WTUIKit",
+      "container" : "WTUIKit.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    }
+  ]
+}

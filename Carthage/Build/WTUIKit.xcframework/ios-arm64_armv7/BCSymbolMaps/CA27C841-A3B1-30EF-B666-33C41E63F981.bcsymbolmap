@@ -1,0 +1,219 @@
+BCSymbolMap Version: 2.0
+Apple clang version 12.0.5 (clang-1205.0.22.9)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk
+iPhoneOS14.5.sdk
+/Users/admin/Library/Developer/Xcode/DerivedData/WTUIKit-ftyjwadiiquqzhekbymcppycdmpv/Build/Intermediates.noindex/ArchiveIntermediates/WTUIKit/IntermediateBuildFilesPath/WTUIKit.build/Release-iphoneos/WTUIKit.build/DerivedSources/WTUIKit_vers.c
+/Users/admin/Documents/GitHub/WTFrameWorkSource/WTUIKit
+-[WTTextField initWithFrame:]
+-[WTTextField canPerformAction:withSender:]
+-[WTTextField textFieldDidChange:]
+-[WTTextField checkTextFieldMaxLen:]
+-[WTTextField drawPlaceholderInRect:]
+-[WTTextField stringContainsEmoji:]
+___35-[WTTextField stringContainsEmoji:]_block_invoke
+___copy_helper_block_e4_20r
+___destroy_helper_block_e4_20r
+-[WTTextField disable_emoji:]
+-[WTTextField maxLen]
+-[WTTextField setMaxLen:]
+-[WTTextField hasCopyAndPast]
+-[WTTextField setHasCopyAndPast:]
+-[WTTextField placeHolderColor]
+-[WTTextField setPlaceHolderColor:]
+-[WTTextField textFieldDidChanged]
+-[WTTextField setTextFieldDidChanged:]
+-[WTTextField .cxx_destruct]
+_OBJC_SELECTOR_REFERENCES_
+_OBJC_SELECTOR_REFERENCES_.2
+_OBJC_SELECTOR_REFERENCES_.4
+_OBJC_SELECTOR_REFERENCES_.6
+_OBJC_SELECTOR_REFERENCES_.8
+_OBJC_SELECTOR_REFERENCES_.10
+_OBJC_SELECTOR_REFERENCES_.12
+_OBJC_SELECTOR_REFERENCES_.14
+_OBJC_SELECTOR_REFERENCES_.16
+_OBJC_SELECTOR_REFERENCES_.18
+_OBJC_SELECTOR_REFERENCES_.20
+_OBJC_SELECTOR_REFERENCES_.22
+_OBJC_SELECTOR_REFERENCES_.24
+_OBJC_SELECTOR_REFERENCES_.26
+_OBJC_SELECTOR_REFERENCES_.28
+_OBJC_SELECTOR_REFERENCES_.30
+_OBJC_SELECTOR_REFERENCES_.32
+_OBJC_SELECTOR_REFERENCES_.34
+_OBJC_SELECTOR_REFERENCES_.36
+_OBJC_SELECTOR_REFERENCES_.38
+_OBJC_SELECTOR_REFERENCES_.40
+_OBJC_SELECTOR_REFERENCES_.42
+_OBJC_SELECTOR_REFERENCES_.44
+_OBJC_SELECTOR_REFERENCES_.46
+_OBJC_SELECTOR_REFERENCES_.48
+_OBJC_SELECTOR_REFERENCES_.50
+_OBJC_SELECTOR_REFERENCES_.52
+_OBJC_SELECTOR_REFERENCES_.54
+_OBJC_SELECTOR_REFERENCES_.56
+_OBJC_SELECTOR_REFERENCES_.58
+_OBJC_SELECTOR_REFERENCES_.60
+_OBJC_CLASSLIST_REFERENCES_$_
+_OBJC_SELECTOR_REFERENCES_.62
+_OBJC_SELECTOR_REFERENCES_.64
+_OBJC_SELECTOR_REFERENCES_.66
+_OBJC_SELECTOR_REFERENCES_.68
+___block_descriptor_24_e4_20r_e51_v28?0"NSString"4{_NSRange=II}8{_NSRange=II}16^c24l
+_OBJC_SELECTOR_REFERENCES_.71
+_OBJC_CLASSLIST_REFERENCES_$_.72
+_OBJC_SELECTOR_REFERENCES_.76
+_OBJC_SELECTOR_REFERENCES_.80
+_OBJC_IVAR_$_WTTextField._maxLen
+_OBJC_IVAR_$_WTTextField._hasCopyAndPast
+_OBJC_IVAR_$_WTTextField._placeHolderColor
+_OBJC_IVAR_$_WTTextField._textFieldDidChanged
+__OBJC_METACLASS_RO_$_WTTextField
+__OBJC_$_INSTANCE_METHODS_WTTextField
+__OBJC_$_INSTANCE_VARIABLES_WTTextField
+__OBJC_$_PROP_LIST_WTTextField
+__OBJC_CLASS_RO_$_WTTextField
+/Users/admin/Documents/GitHub/WTFrameWorkSource/WTUIKit/WTUIKit/WTTextField/WTTextField.m
+WTUIKit/WTTextField/WTTextField.m
+WTUIKit/WTTextField/WTTextField.h
+__destroy_helper_block_e4_20r
+__copy_helper_block_e4_20r
+__35-[WTTextField stringContainsEmoji:]_block_invoke
+CGRectMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+-[ZXModalView initWithView:]
+-[ZXModalView show]
+___19-[ZXModalView show]_block_invoke
+___copy_helper_block_e4_20s
+___destroy_helper_block_e4_20s
+-[ZXModalView hide]
+___19-[ZXModalView hide]_block_invoke
+___19-[ZXModalView hide]_block_invoke_2
+-[ZXModalView contentView]
+-[ZXModalView layoutSubviews]
+-[ZXModalView setContentView:]
+-[ZXModalView .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.7
+_OBJC_SELECTOR_REFERENCES_.9
+_OBJC_SELECTOR_REFERENCES_.11
+_OBJC_SELECTOR_REFERENCES_.13
+_OBJC_SELECTOR_REFERENCES_.15
+_OBJC_CLASSLIST_REFERENCES_$_.16
+_OBJC_CLASSLIST_REFERENCES_$_.23
+___block_descriptor_24_e4_20s_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.25
+_OBJC_SELECTOR_REFERENCES_.27
+___block_descriptor_24_e4_20s_e7_v8?0c4l
+_OBJC_IVAR_$_ZXModalView._contentView
+__OBJC_METACLASS_RO_$_ZXModalView
+__OBJC_$_INSTANCE_METHODS_ZXModalView
+__OBJC_$_INSTANCE_VARIABLES_ZXModalView
+__OBJC_$_PROP_LIST_ZXModalView
+__OBJC_CLASS_RO_$_ZXModalView
+/Users/admin/Documents/GitHub/WTFrameWorkSource/WTUIKit/WTUIKit/ZXModalView/ZXModalView.m
+WTUIKit/ZXModalView/ZXModalView.m
+WTUIKit/ZXModalView/ZXModalView.h
+__19-[ZXModalView hide]_block_invoke_2
+__19-[ZXModalView hide]_block_invoke
+__destroy_helper_block_e4_20s
+__copy_helper_block_e4_20s
+__19-[ZXModalView show]_block_invoke
+-[WTPageControl initWithFrame:]
+-[WTPageControl initWithCoder:]
+-[WTPageControl configurePropertys]
+-[WTPageControl willMoveToSuperview:]
+-[WTPageControl contentSize]
+-[WTPageControl setNumberOfPages:]
+-[WTPageControl setCurrentPage:]
+-[WTPageControl setCurrentPage:animate:]
+___40-[WTPageControl setCurrentPage:animate:]_block_invoke
+-[WTPageControl setPageIndicatorImage:]
+-[WTPageControl setCurrentPageIndicatorImage:]
+-[WTPageControl setPageIndicatorTintColor:]
+-[WTPageControl setCurrentPageIndicatorTintColor:]
+-[WTPageControl setPageIndicatorSize:]
+-[WTPageControl setPageIndicatorSpaing:]
+-[WTPageControl setCurrentPageIndicatorSize:]
+-[WTPageControl setContentHorizontalAlignment:]
+-[WTPageControl setContentVerticalAlignment:]
+-[WTPageControl updateIndicatorViews]
+-[WTPageControl updateIndicatorViewsBehavior]
+-[WTPageControl layoutIndicatorViews]
+-[WTPageControl layoutSubviews]
+-[WTPageControl numberOfPages]
+-[WTPageControl currentPage]
+-[WTPageControl hidesForSinglePage]
+-[WTPageControl setHidesForSinglePage:]
+-[WTPageControl pageIndicatorSpaing]
+-[WTPageControl contentInset]
+-[WTPageControl setContentInset:]
+-[WTPageControl pageIndicatorTintColor]
+-[WTPageControl currentPageIndicatorTintColor]
+-[WTPageControl pageIndicatorImage]
+-[WTPageControl currentPageIndicatorImage]
+-[WTPageControl indicatorImageContentMode]
+-[WTPageControl setIndicatorImageContentMode:]
+-[WTPageControl pageIndicatorSize]
+-[WTPageControl currentPageIndicatorSize]
+-[WTPageControl animateDuring]
+-[WTPageControl setAnimateDuring:]
+-[WTPageControl indicatorViews]
+-[WTPageControl setIndicatorViews:]
+-[WTPageControl forceUpdate]
+-[WTPageControl setForceUpdate:]
+-[WTPageControl .cxx_destruct]
+_OBJC_IVAR_$_WTPageControl._forceUpdate
+_OBJC_IVAR_$_WTPageControl._animateDuring
+_OBJC_IVAR_$_WTPageControl._pageIndicatorSpaing
+_OBJC_IVAR_$_WTPageControl._indicatorImageContentMode
+_OBJC_IVAR_$_WTPageControl._pageIndicatorSize
+_OBJC_IVAR_$_WTPageControl._currentPageIndicatorSize
+_OBJC_IVAR_$_WTPageControl._pageIndicatorTintColor
+_OBJC_IVAR_$_WTPageControl._currentPageIndicatorTintColor
+_OBJC_IVAR_$_WTPageControl._indicatorViews
+_OBJC_IVAR_$_WTPageControl._contentInset
+_OBJC_IVAR_$_WTPageControl._numberOfPages
+_OBJC_IVAR_$_WTPageControl._currentPage
+_OBJC_CLASSLIST_REFERENCES_$_.25
+___block_descriptor_28_e4_20s_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.29
+_OBJC_IVAR_$_WTPageControl._pageIndicatorImage
+_OBJC_IVAR_$_WTPageControl._currentPageIndicatorImage
+_OBJC_SELECTOR_REFERENCES_.31
+_OBJC_SELECTOR_REFERENCES_.33
+_OBJC_SELECTOR_REFERENCES_.35
+_OBJC_SELECTOR_REFERENCES_.37
+_OBJC_CLASSLIST_REFERENCES_$_.38
+_OBJC_CLASSLIST_REFERENCES_$_.41
+_OBJC_SELECTOR_REFERENCES_.43
+_OBJC_SELECTOR_REFERENCES_.45
+_OBJC_SELECTOR_REFERENCES_.47
+_OBJC_SELECTOR_REFERENCES_.49
+_OBJC_SELECTOR_REFERENCES_.51
+_OBJC_SELECTOR_REFERENCES_.53
+_OBJC_SELECTOR_REFERENCES_.55
+_OBJC_SELECTOR_REFERENCES_.57
+_OBJC_IVAR_$_WTPageControl._hidesForSinglePage
+_OBJC_SELECTOR_REFERENCES_.59
+_OBJC_SELECTOR_REFERENCES_.61
+_OBJC_SELECTOR_REFERENCES_.63
+_OBJC_SELECTOR_REFERENCES_.65
+_OBJC_SELECTOR_REFERENCES_.67
+_OBJC_SELECTOR_REFERENCES_.69
+_OBJC_SELECTOR_REFERENCES_.73
+_OBJC_SELECTOR_REFERENCES_.75
+_OBJC_SELECTOR_REFERENCES_.77
+_OBJC_SELECTOR_REFERENCES_.79
+_OBJC_SELECTOR_REFERENCES_.81
+_OBJC_SELECTOR_REFERENCES_.83
+__OBJC_METACLASS_RO_$_WTPageControl
+__OBJC_$_INSTANCE_METHODS_WTPageControl
+__OBJC_$_INSTANCE_VARIABLES_WTPageControl
+__OBJC_$_PROP_LIST_WTPageControl
+__OBJC_CLASS_RO_$_WTPageControl
+/Users/admin/Documents/GitHub/WTFrameWorkSource/WTUIKit/WTUIKit/WTPageControl/WTPageControl.m
+WTUIKit/WTPageControl/WTPageControl.m
+WTUIKit/WTPageControl/WTPageControl.h
+__CGSizeEqualToSize
+__40-[WTPageControl setCurrentPage:animate:]_block_invoke
+CGSizeMake

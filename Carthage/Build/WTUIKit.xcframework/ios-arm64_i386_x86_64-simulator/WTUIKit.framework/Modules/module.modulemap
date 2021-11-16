@@ -1,0 +1,6 @@
+framework module WTUIKit {
+  umbrella header "WTUIKit.h"
+
+  export *
+  module * { export * }
+}

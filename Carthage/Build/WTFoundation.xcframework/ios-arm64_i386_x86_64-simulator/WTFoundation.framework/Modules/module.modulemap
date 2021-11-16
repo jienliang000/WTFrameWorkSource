@@ -1,0 +1,6 @@
+framework module WTFoundation {
+  umbrella header "WTFoundation.h"
+
+  export *
+  module * { export * }
+}
