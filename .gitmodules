@@ -1,0 +1,3 @@
+[submodule "ThirdPartyFramework"]
+	path = ThirdPartyFramework
+	url = https://gitee.com/jienliang000/ThirdPartyFramework.git

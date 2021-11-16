@@ -1,0 +1,989 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		843F542C27229D2400AC6A27 /* WTFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F542A27229D2400AC6A27 /* WTFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F544A27229F3400AC6A27 /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F544827229F3400AC6A27 /* WTAppDelegate.m */; };
+		843F544B27229F3400AC6A27 /* WTAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F544927229F3400AC6A27 /* WTAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F54582722B12600AC6A27 /* WTAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54562722B12600AC6A27 /* WTAppInfo.m */; };
+		843F54592722B12600AC6A27 /* WTAppInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F54572722B12600AC6A27 /* WTAppInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F545D2722B16500AC6A27 /* WTKeychainUUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F545B2722B16500AC6A27 /* WTKeychainUUID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F545E2722B16500AC6A27 /* WTKeychainUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F545C2722B16500AC6A27 /* WTKeychainUUID.m */; };
+		843F54622722B1CE00AC6A27 /* WTStringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F54602722B1CE00AC6A27 /* WTStringUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F54632722B1CE00AC6A27 /* WTStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54612722B1CE00AC6A27 /* WTStringUtil.m */; };
+		843F54662722B20100AC6A27 /* WTCommonUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F54642722B20100AC6A27 /* WTCommonUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F54672722B20100AC6A27 /* WTCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54652722B20100AC6A27 /* WTCommonUtil.m */; };
+		843F546A2722B22E00AC6A27 /* WTJsonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54682722B22E00AC6A27 /* WTJsonUtil.m */; };
+		843F546B2722B22E00AC6A27 /* WTJsonUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F54692722B22E00AC6A27 /* WTJsonUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F546E2722B25700AC6A27 /* WTVersionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F546C2722B25700AC6A27 /* WTVersionUtil.m */; };
+		843F546F2722B25700AC6A27 /* WTVersionUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F546D2722B25700AC6A27 /* WTVersionUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F54742722B29F00AC6A27 /* WTFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F54702722B29F00AC6A27 /* WTFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F54752722B29F00AC6A27 /* WTDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54712722B29F00AC6A27 /* WTDateUtil.m */; };
+		843F54762722B29F00AC6A27 /* WTDateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F54722722B29F00AC6A27 /* WTDateUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F54772722B29F00AC6A27 /* WTFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54732722B29F00AC6A27 /* WTFile.m */; };
+		843F547B2722B2DF00AC6A27 /* ZXReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54792722B2DF00AC6A27 /* ZXReachability.m */; };
+		843F547C2722B2DF00AC6A27 /* ZXReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F547A2722B2DF00AC6A27 /* ZXReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F54842722B34100AC6A27 /* NSDate+Exts.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F547E2722B34100AC6A27 /* NSDate+Exts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F54852722B34100AC6A27 /* NSObject+UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F547F2722B34100AC6A27 /* NSObject+UserInfo.m */; };
+		843F54862722B34100AC6A27 /* NSString+WTRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F54802722B34100AC6A27 /* NSString+WTRegex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F54872722B34100AC6A27 /* NSString+WTRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54812722B34100AC6A27 /* NSString+WTRegex.m */; };
+		843F54882722B34100AC6A27 /* NSObject+UserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F54822722B34100AC6A27 /* NSObject+UserInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F54892722B34100AC6A27 /* NSDate+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54832722B34100AC6A27 /* NSDate+Exts.m */; };
+		843F548D2722B38000AC6A27 /* WTDBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F548B2722B38000AC6A27 /* WTDBHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F548E2722B38000AC6A27 /* WTDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F548C2722B38000AC6A27 /* WTDBHelper.m */; };
+		843F54BA2722C4D100AC6A27 /* WTQiniuUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54B82722C4D100AC6A27 /* WTQiniuUpload.m */; };
+		843F54BB2722C4D100AC6A27 /* WTQiniuUpload.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F54B92722C4D100AC6A27 /* WTQiniuUpload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F54C12722C57900AC6A27 /* WTKSPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54BD2722C57900AC6A27 /* WTKSPhotoBrowser.m */; };
+		843F54C22722C57900AC6A27 /* WTKSPhotoItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F54BE2722C57900AC6A27 /* WTKSPhotoItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F54C32722C57900AC6A27 /* WTKSPhotoBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F54BF2722C57900AC6A27 /* WTKSPhotoBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843F54C42722C57900AC6A27 /* WTKSPhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54C02722C57900AC6A27 /* WTKSPhotoItem.m */; };
+		84ADD86927264EC1005B86D6 /* WTNetworkingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD85127264EC1005B86D6 /* WTNetworkingRequest.m */; };
+		84ADD86A27264EC1005B86D6 /* WTTokenTimeoutErrorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD85227264EC1005B86D6 /* WTTokenTimeoutErrorDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD86B27264EC1005B86D6 /* WTHTTPRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD85327264EC1005B86D6 /* WTHTTPRequestHandler.m */; };
+		84ADD86C27264EC1005B86D6 /* WTHTTPWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD85427264EC1005B86D6 /* WTHTTPWebRequest.m */; };
+		84ADD86D27264EC1005B86D6 /* WTBaseHTTPService.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD85527264EC1005B86D6 /* WTBaseHTTPService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD86E27264EC1005B86D6 /* WTTokenTimeoutCountable.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD85627264EC1005B86D6 /* WTTokenTimeoutCountable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD86F27264EC1005B86D6 /* WTNetworkReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD85727264EC1005B86D6 /* WTNetworkReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD87027264EC1005B86D6 /* WTMultipartFormDataPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD85827264EC1005B86D6 /* WTMultipartFormDataPrivate.m */; };
+		84ADD87127264EC1005B86D6 /* WTHTTPServiceConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD85927264EC1005B86D6 /* WTHTTPServiceConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD87227264EC1005B86D6 /* WTURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD85A27264EC1005B86D6 /* WTURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD87327264EC1005B86D6 /* WTNetworkingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD85B27264EC1005B86D6 /* WTNetworkingManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD87427264EC1005B86D6 /* WTHTTPRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD85C27264EC1005B86D6 /* WTHTTPRequestBuilder.m */; };
+		84ADD87527264EC1005B86D6 /* WTMultipartFormData.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD85D27264EC1005B86D6 /* WTMultipartFormData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD87627264EC1005B86D6 /* WTHTTPRequestHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD85E27264EC1005B86D6 /* WTHTTPRequestHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD87727264EC1005B86D6 /* WTNetworkingRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD85F27264EC1005B86D6 /* WTNetworkingRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD87827264EC1005B86D6 /* WTHTTPWebRequest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD86027264EC1005B86D6 /* WTHTTPWebRequest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD87927264EC1005B86D6 /* WTMultipartFormDataPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD86127264EC1005B86D6 /* WTMultipartFormDataPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD87A27264EC1005B86D6 /* WTNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD86227264EC1005B86D6 /* WTNetworkReachability.m */; };
+		84ADD87B27264EC1005B86D6 /* WTBaseHTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD86327264EC1005B86D6 /* WTBaseHTTPService.m */; };
+		84ADD87C27264EC1005B86D6 /* WTHTTPWebRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD86427264EC1005B86D6 /* WTHTTPWebRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD87D27264EC1005B86D6 /* WTHTTPServiceConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD86527264EC1005B86D6 /* WTHTTPServiceConfiguration.m */; };
+		84ADD87E27264EC1005B86D6 /* WTHTTPRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD86627264EC1005B86D6 /* WTHTTPRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD87F27264EC1005B86D6 /* WTNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD86727264EC1005B86D6 /* WTNetworkingManager.m */; };
+		84ADD88027264EC1005B86D6 /* WTURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD86827264EC1005B86D6 /* WTURLSessionManager.m */; };
+		84ADD88A27264FD0005B86D6 /* WTProductManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD88627264FD0005B86D6 /* WTProductManager.m */; };
+		84ADD88B27264FD0005B86D6 /* WTProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD88727264FD0005B86D6 /* WTProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD88C27264FD0005B86D6 /* WTProductManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD88827264FD0005B86D6 /* WTProductManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD89127265437005B86D6 /* WTToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD88F27265437005B86D6 /* WTToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD89227265437005B86D6 /* WTToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD89027265437005B86D6 /* WTToast.m */; };
+		84ADD8942726548D005B86D6 /* WTDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8932726548D005B86D6 /* WTDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD89A272654CA005B86D6 /* WTAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD896272654CA005B86D6 /* WTAlertController.m */; };
+		84ADD89B272654CA005B86D6 /* WTAlertControllerTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD897272654CA005B86D6 /* WTAlertControllerTransition.h */; };
+		84ADD89C272654CA005B86D6 /* WTAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD898272654CA005B86D6 /* WTAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD89D272654CA005B86D6 /* WTAlertControllerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD899272654CA005B86D6 /* WTAlertControllerTransition.m */; };
+		84ADD8A427265573005B86D6 /* WTColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD8A227265573005B86D6 /* WTColorUtil.m */; };
+		84ADD8A527265573005B86D6 /* WTColorUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8A327265573005B86D6 /* WTColorUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD8A8272655A2005B86D6 /* WTUIKitUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD8A6272655A2005B86D6 /* WTUIKitUtil.m */; };
+		84ADD8A9272655A2005B86D6 /* WTUIKitUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8A7272655A2005B86D6 /* WTUIKitUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD8AC2726563A005B86D6 /* WTUIConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8AA2726563A005B86D6 /* WTUIConstant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD8AD2726563A005B86D6 /* WTUIConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD8AB2726563A005B86D6 /* WTUIConstant.m */; };
+		84ADD8AF2726566E005B86D6 /* WTUIKitDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8AE2726566E005B86D6 /* WTUIKitDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD8B3272657E6005B86D6 /* WTFormView.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8B1272657E6005B86D6 /* WTFormView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD8B4272657E6005B86D6 /* WTFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD8B2272657E6005B86D6 /* WTFormView.m */; };
+		84ADD8C027265901005B86D6 /* UIImageView+WTWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD8BE27265901005B86D6 /* UIImageView+WTWebImage.m */; };
+		84ADD8C127265901005B86D6 /* UIImageView+WTWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8BF27265901005B86D6 /* UIImageView+WTWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD8C427265930005B86D6 /* UIButton+WTWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8C227265930005B86D6 /* UIButton+WTWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD8C527265930005B86D6 /* UIButton+WTWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD8C327265930005B86D6 /* UIButton+WTWebImage.m */; };
+		84ADD8C82726596B005B86D6 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD8C62726596B005B86D6 /* UIView+Category.m */; };
+		84ADD8C92726596B005B86D6 /* UIView+Category.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8C72726596B005B86D6 /* UIView+Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD8CC27265992005B86D6 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD8CA27265992005B86D6 /* UITextView+Placeholder.m */; };
+		84ADD8CD27265992005B86D6 /* UITextView+Placeholder.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8CB27265992005B86D6 /* UITextView+Placeholder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD8D027265A0B005B86D6 /* WTImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD8CE27265A0B005B86D6 /* WTImageUtil.m */; };
+		84ADD8D127265A0B005B86D6 /* WTImageUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8CF27265A0B005B86D6 /* WTImageUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD8D527265A6C005B86D6 /* WTCustomNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD8D327265A6C005B86D6 /* WTCustomNavBar.m */; };
+		84ADD8D627265A6C005B86D6 /* WTCustomNavBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8D427265A6C005B86D6 /* WTCustomNavBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD8DE27265BA1005B86D6 /* WTEmptyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD8D827265BA1005B86D6 /* WTEmptyCell.m */; };
+		84ADD8DF27265BA1005B86D6 /* WTBaseCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8D927265BA1005B86D6 /* WTBaseCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD8E127265BA1005B86D6 /* WTEmptyCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8DB27265BA1005B86D6 /* WTEmptyCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD8E327265BA1005B86D6 /* WTBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD8DD27265BA1005B86D6 /* WTBaseCell.m */; };
+		84ADD8E6272680D6005B86D6 /* WTEmptyDataCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8E4272680D6005B86D6 /* WTEmptyDataCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD8E7272680D6005B86D6 /* WTEmptyDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD8E5272680D6005B86D6 /* WTEmptyDataCell.m */; };
+		84ADD8F4272681E7005B86D6 /* WTImagePickerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8F2272681E7005B86D6 /* WTImagePickerUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD8F5272681E7005B86D6 /* WTImagePickerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD8F3272681E7005B86D6 /* WTImagePickerUtil.m */; };
+		84ADD8FD27268271005B86D6 /* WTFailedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD8F927268271005B86D6 /* WTFailedView.m */; };
+		84ADD8FE27268271005B86D6 /* WTLoadingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8FA27268271005B86D6 /* WTLoadingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD8FF27268271005B86D6 /* WTFailedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD8FB27268271005B86D6 /* WTFailedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD90027268271005B86D6 /* WTLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD8FC27268271005B86D6 /* WTLoadingView.m */; };
+		84ADD90627268357005B86D6 /* WTTabbarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD90427268357005B86D6 /* WTTabbarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD90727268357005B86D6 /* WTTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD90527268357005B86D6 /* WTTabbarController.m */; };
+		84ADD90A27268413005B86D6 /* UIButton+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD90827268413005B86D6 /* UIButton+Style.m */; };
+		84ADD90B27268413005B86D6 /* UIButton+Style.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD90927268413005B86D6 /* UIButton+Style.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD91027268A7C005B86D6 /* WTViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD90C27268A7B005B86D6 /* WTViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD91127268A7C005B86D6 /* WTFormViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD90D27268A7B005B86D6 /* WTFormViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD91227268A7C005B86D6 /* WTFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD90E27268A7C005B86D6 /* WTFormViewController.m */; };
+		84ADD91327268A7C005B86D6 /* WTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD90F27268A7C005B86D6 /* WTViewController.m */; };
+		84ADD91627268C61005B86D6 /* WTWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ADD91427268C61005B86D6 /* WTWebViewController.m */; };
+		84ADD91727268C61005B86D6 /* WTWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADD91527268C61005B86D6 /* WTWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ADD9E82727E15F005B86D6 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADD9E72727E15F005B86D6 /* AppTrackingTransparency.framework */; };
+		84ADDA45272C54BD005B86D6 /* Masonry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADDA37272C54BC005B86D6 /* Masonry.xcframework */; };
+		84ADDA47272C54BD005B86D6 /* YYKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADDA38272C54BC005B86D6 /* YYKit.xcframework */; };
+		84ADDA49272C54BD005B86D6 /* MBProgressHUD.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADDA39272C54BC005B86D6 /* MBProgressHUD.xcframework */; };
+		84ADDA4B272C54BD005B86D6 /* FMDataBase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADDA3A272C54BC005B86D6 /* FMDataBase.xcframework */; };
+		84ADDA4F272C54BD005B86D6 /* TZImagePickerController.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADDA3C272C54BC005B86D6 /* TZImagePickerController.xcframework */; };
+		84ADDA51272C54BD005B86D6 /* AFNetworking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADDA3D272C54BC005B86D6 /* AFNetworking.xcframework */; };
+		84ADDA53272C54BD005B86D6 /* IQKeyboardManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADDA3E272C54BD005B86D6 /* IQKeyboardManager.xcframework */; };
+		84ADDA55272C54BD005B86D6 /* SDAutoLayout.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADDA3F272C54BD005B86D6 /* SDAutoLayout.xcframework */; };
+		84ADDA57272C54BD005B86D6 /* QiniuSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADDA40272C54BD005B86D6 /* QiniuSDK.xcframework */; };
+		84ADDA59272C54BD005B86D6 /* SDWebImage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADDA41272C54BD005B86D6 /* SDWebImage.xcframework */; };
+		84ADDA5B272C54BD005B86D6 /* ReactiveObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADDA42272C54BD005B86D6 /* ReactiveObjC.xcframework */; };
+		84ADDA5D272C54BD005B86D6 /* RETableViewManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADDA43272C54BD005B86D6 /* RETableViewManager.xcframework */; };
+		84ADDA5F272C54BD005B86D6 /* MJRefresh.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADDA44272C54BD005B86D6 /* MJRefresh.xcframework */; };
+		84ADDA63272C54DE005B86D6 /* KSPhotoBrowser.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADDA62272C54DE005B86D6 /* KSPhotoBrowser.xcframework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		843F542727229D2400AC6A27 /* WTFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WTFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		843F542A27229D2400AC6A27 /* WTFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTFoundation.h; sourceTree = "<group>"; };
+		843F542B27229D2400AC6A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843F544827229F3400AC6A27 /* WTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAppDelegate.m; sourceTree = "<group>"; };
+		843F544927229F3400AC6A27 /* WTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAppDelegate.h; sourceTree = "<group>"; };
+		843F54562722B12600AC6A27 /* WTAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAppInfo.m; sourceTree = "<group>"; };
+		843F54572722B12600AC6A27 /* WTAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAppInfo.h; sourceTree = "<group>"; };
+		843F545B2722B16500AC6A27 /* WTKeychainUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKeychainUUID.h; sourceTree = "<group>"; };
+		843F545C2722B16500AC6A27 /* WTKeychainUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKeychainUUID.m; sourceTree = "<group>"; };
+		843F54602722B1CE00AC6A27 /* WTStringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTStringUtil.h; sourceTree = "<group>"; };
+		843F54612722B1CE00AC6A27 /* WTStringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTStringUtil.m; sourceTree = "<group>"; };
+		843F54642722B20100AC6A27 /* WTCommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCommonUtil.h; sourceTree = "<group>"; };
+		843F54652722B20100AC6A27 /* WTCommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCommonUtil.m; sourceTree = "<group>"; };
+		843F54682722B22E00AC6A27 /* WTJsonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTJsonUtil.m; sourceTree = "<group>"; };
+		843F54692722B22E00AC6A27 /* WTJsonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTJsonUtil.h; sourceTree = "<group>"; };
+		843F546C2722B25700AC6A27 /* WTVersionUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTVersionUtil.m; sourceTree = "<group>"; };
+		843F546D2722B25700AC6A27 /* WTVersionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTVersionUtil.h; sourceTree = "<group>"; };
+		843F54702722B29F00AC6A27 /* WTFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFile.h; sourceTree = "<group>"; };
+		843F54712722B29F00AC6A27 /* WTDateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDateUtil.m; sourceTree = "<group>"; };
+		843F54722722B29F00AC6A27 /* WTDateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDateUtil.h; sourceTree = "<group>"; };
+		843F54732722B29F00AC6A27 /* WTFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFile.m; sourceTree = "<group>"; };
+		843F54792722B2DF00AC6A27 /* ZXReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXReachability.m; sourceTree = "<group>"; };
+		843F547A2722B2DF00AC6A27 /* ZXReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXReachability.h; sourceTree = "<group>"; };
+		843F547E2722B34100AC6A27 /* NSDate+Exts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Exts.h"; sourceTree = "<group>"; };
+		843F547F2722B34100AC6A27 /* NSObject+UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+UserInfo.m"; sourceTree = "<group>"; };
+		843F54802722B34100AC6A27 /* NSString+WTRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WTRegex.h"; sourceTree = "<group>"; };
+		843F54812722B34100AC6A27 /* NSString+WTRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WTRegex.m"; sourceTree = "<group>"; };
+		843F54822722B34100AC6A27 /* NSObject+UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+UserInfo.h"; sourceTree = "<group>"; };
+		843F54832722B34100AC6A27 /* NSDate+Exts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Exts.m"; sourceTree = "<group>"; };
+		843F548B2722B38000AC6A27 /* WTDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDBHelper.h; sourceTree = "<group>"; };
+		843F548C2722B38000AC6A27 /* WTDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDBHelper.m; sourceTree = "<group>"; };
+		843F54B82722C4D100AC6A27 /* WTQiniuUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTQiniuUpload.m; sourceTree = "<group>"; };
+		843F54B92722C4D100AC6A27 /* WTQiniuUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTQiniuUpload.h; sourceTree = "<group>"; };
+		843F54BD2722C57900AC6A27 /* WTKSPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKSPhotoBrowser.m; sourceTree = "<group>"; };
+		843F54BE2722C57900AC6A27 /* WTKSPhotoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKSPhotoItem.h; sourceTree = "<group>"; };
+		843F54BF2722C57900AC6A27 /* WTKSPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTKSPhotoBrowser.h; sourceTree = "<group>"; };
+		843F54C02722C57900AC6A27 /* WTKSPhotoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTKSPhotoItem.m; sourceTree = "<group>"; };
+		84ADD85127264EC1005B86D6 /* WTNetworkingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTNetworkingRequest.m; sourceTree = "<group>"; };
+		84ADD85227264EC1005B86D6 /* WTTokenTimeoutErrorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTokenTimeoutErrorDelegate.h; sourceTree = "<group>"; };
+		84ADD85327264EC1005B86D6 /* WTHTTPRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTHTTPRequestHandler.m; sourceTree = "<group>"; };
+		84ADD85427264EC1005B86D6 /* WTHTTPWebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTHTTPWebRequest.m; sourceTree = "<group>"; };
+		84ADD85527264EC1005B86D6 /* WTBaseHTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTBaseHTTPService.h; sourceTree = "<group>"; };
+		84ADD85627264EC1005B86D6 /* WTTokenTimeoutCountable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTokenTimeoutCountable.h; sourceTree = "<group>"; };
+		84ADD85727264EC1005B86D6 /* WTNetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTNetworkReachability.h; sourceTree = "<group>"; };
+		84ADD85827264EC1005B86D6 /* WTMultipartFormDataPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMultipartFormDataPrivate.m; sourceTree = "<group>"; };
+		84ADD85927264EC1005B86D6 /* WTHTTPServiceConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTHTTPServiceConfiguration.h; sourceTree = "<group>"; };
+		84ADD85A27264EC1005B86D6 /* WTURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTURLSessionManager.h; sourceTree = "<group>"; };
+		84ADD85B27264EC1005B86D6 /* WTNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTNetworkingManager.h; sourceTree = "<group>"; };
+		84ADD85C27264EC1005B86D6 /* WTHTTPRequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTHTTPRequestBuilder.m; sourceTree = "<group>"; };
+		84ADD85D27264EC1005B86D6 /* WTMultipartFormData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMultipartFormData.h; sourceTree = "<group>"; };
+		84ADD85E27264EC1005B86D6 /* WTHTTPRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTHTTPRequestHandler.h; sourceTree = "<group>"; };
+		84ADD85F27264EC1005B86D6 /* WTNetworkingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTNetworkingRequest.h; sourceTree = "<group>"; };
+		84ADD86027264EC1005B86D6 /* WTHTTPWebRequest+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WTHTTPWebRequest+Private.h"; sourceTree = "<group>"; };
+		84ADD86127264EC1005B86D6 /* WTMultipartFormDataPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMultipartFormDataPrivate.h; sourceTree = "<group>"; };
+		84ADD86227264EC1005B86D6 /* WTNetworkReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTNetworkReachability.m; sourceTree = "<group>"; };
+		84ADD86327264EC1005B86D6 /* WTBaseHTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTBaseHTTPService.m; sourceTree = "<group>"; };
+		84ADD86427264EC1005B86D6 /* WTHTTPWebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTHTTPWebRequest.h; sourceTree = "<group>"; };
+		84ADD86527264EC1005B86D6 /* WTHTTPServiceConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTHTTPServiceConfiguration.m; sourceTree = "<group>"; };
+		84ADD86627264EC1005B86D6 /* WTHTTPRequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTHTTPRequestBuilder.h; sourceTree = "<group>"; };
+		84ADD86727264EC1005B86D6 /* WTNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTNetworkingManager.m; sourceTree = "<group>"; };
+		84ADD86827264EC1005B86D6 /* WTURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTURLSessionManager.m; sourceTree = "<group>"; };
+		84ADD88627264FD0005B86D6 /* WTProductManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTProductManager.m; sourceTree = "<group>"; };
+		84ADD88727264FD0005B86D6 /* WTProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTProduct.h; sourceTree = "<group>"; };
+		84ADD88827264FD0005B86D6 /* WTProductManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTProductManager.h; sourceTree = "<group>"; };
+		84ADD88F27265437005B86D6 /* WTToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTToast.h; sourceTree = "<group>"; };
+		84ADD89027265437005B86D6 /* WTToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTToast.m; sourceTree = "<group>"; };
+		84ADD8932726548D005B86D6 /* WTDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDefine.h; sourceTree = "<group>"; };
+		84ADD896272654CA005B86D6 /* WTAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAlertController.m; sourceTree = "<group>"; };
+		84ADD897272654CA005B86D6 /* WTAlertControllerTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAlertControllerTransition.h; sourceTree = "<group>"; };
+		84ADD898272654CA005B86D6 /* WTAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAlertController.h; sourceTree = "<group>"; };
+		84ADD899272654CA005B86D6 /* WTAlertControllerTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAlertControllerTransition.m; sourceTree = "<group>"; };
+		84ADD8A227265573005B86D6 /* WTColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTColorUtil.m; sourceTree = "<group>"; };
+		84ADD8A327265573005B86D6 /* WTColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTColorUtil.h; sourceTree = "<group>"; };
+		84ADD8A6272655A2005B86D6 /* WTUIKitUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTUIKitUtil.m; sourceTree = "<group>"; };
+		84ADD8A7272655A2005B86D6 /* WTUIKitUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTUIKitUtil.h; sourceTree = "<group>"; };
+		84ADD8AA2726563A005B86D6 /* WTUIConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTUIConstant.h; sourceTree = "<group>"; };
+		84ADD8AB2726563A005B86D6 /* WTUIConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTUIConstant.m; sourceTree = "<group>"; };
+		84ADD8AE2726566E005B86D6 /* WTUIKitDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTUIKitDefine.h; sourceTree = "<group>"; };
+		84ADD8B1272657E6005B86D6 /* WTFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFormView.h; sourceTree = "<group>"; };
+		84ADD8B2272657E6005B86D6 /* WTFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFormView.m; sourceTree = "<group>"; };
+		84ADD8BE27265901005B86D6 /* UIImageView+WTWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WTWebImage.m"; sourceTree = "<group>"; };
+		84ADD8BF27265901005B86D6 /* UIImageView+WTWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WTWebImage.h"; sourceTree = "<group>"; };
+		84ADD8C227265930005B86D6 /* UIButton+WTWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WTWebImage.h"; sourceTree = "<group>"; };
+		84ADD8C327265930005B86D6 /* UIButton+WTWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WTWebImage.m"; sourceTree = "<group>"; };
+		84ADD8C62726596B005B86D6 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		84ADD8C72726596B005B86D6 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		84ADD8CA27265992005B86D6 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		84ADD8CB27265992005B86D6 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		84ADD8CE27265A0B005B86D6 /* WTImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTImageUtil.m; sourceTree = "<group>"; };
+		84ADD8CF27265A0B005B86D6 /* WTImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTImageUtil.h; sourceTree = "<group>"; };
+		84ADD8D327265A6C005B86D6 /* WTCustomNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCustomNavBar.m; sourceTree = "<group>"; };
+		84ADD8D427265A6C005B86D6 /* WTCustomNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCustomNavBar.h; sourceTree = "<group>"; };
+		84ADD8D827265BA1005B86D6 /* WTEmptyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTEmptyCell.m; sourceTree = "<group>"; };
+		84ADD8D927265BA1005B86D6 /* WTBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTBaseCell.h; sourceTree = "<group>"; };
+		84ADD8DB27265BA1005B86D6 /* WTEmptyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTEmptyCell.h; sourceTree = "<group>"; };
+		84ADD8DD27265BA1005B86D6 /* WTBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTBaseCell.m; sourceTree = "<group>"; };
+		84ADD8E4272680D6005B86D6 /* WTEmptyDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTEmptyDataCell.h; sourceTree = "<group>"; };
+		84ADD8E5272680D6005B86D6 /* WTEmptyDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTEmptyDataCell.m; sourceTree = "<group>"; };
+		84ADD8F2272681E7005B86D6 /* WTImagePickerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTImagePickerUtil.h; sourceTree = "<group>"; };
+		84ADD8F3272681E7005B86D6 /* WTImagePickerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTImagePickerUtil.m; sourceTree = "<group>"; };
+		84ADD8F927268271005B86D6 /* WTFailedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFailedView.m; sourceTree = "<group>"; };
+		84ADD8FA27268271005B86D6 /* WTLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTLoadingView.h; sourceTree = "<group>"; };
+		84ADD8FB27268271005B86D6 /* WTFailedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFailedView.h; sourceTree = "<group>"; };
+		84ADD8FC27268271005B86D6 /* WTLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTLoadingView.m; sourceTree = "<group>"; };
+		84ADD90427268357005B86D6 /* WTTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTabbarController.h; sourceTree = "<group>"; };
+		84ADD90527268357005B86D6 /* WTTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTabbarController.m; sourceTree = "<group>"; };
+		84ADD90827268413005B86D6 /* UIButton+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Style.m"; sourceTree = "<group>"; };
+		84ADD90927268413005B86D6 /* UIButton+Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Style.h"; sourceTree = "<group>"; };
+		84ADD90C27268A7B005B86D6 /* WTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTViewController.h; sourceTree = "<group>"; };
+		84ADD90D27268A7B005B86D6 /* WTFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTFormViewController.h; sourceTree = "<group>"; };
+		84ADD90E27268A7C005B86D6 /* WTFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTFormViewController.m; sourceTree = "<group>"; };
+		84ADD90F27268A7C005B86D6 /* WTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTViewController.m; sourceTree = "<group>"; };
+		84ADD91427268C61005B86D6 /* WTWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTWebViewController.m; sourceTree = "<group>"; };
+		84ADD91527268C61005B86D6 /* WTWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTWebViewController.h; sourceTree = "<group>"; };
+		84ADD9E72727E15F005B86D6 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		84ADDA37272C54BC005B86D6 /* Masonry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Masonry.xcframework; path = ../ThirdPartyFramework/Masonry.xcframework; sourceTree = "<group>"; };
+		84ADDA38272C54BC005B86D6 /* YYKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = YYKit.xcframework; path = ../ThirdPartyFramework/YYKit.xcframework; sourceTree = "<group>"; };
+		84ADDA39272C54BC005B86D6 /* MBProgressHUD.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MBProgressHUD.xcframework; path = ../ThirdPartyFramework/MBProgressHUD.xcframework; sourceTree = "<group>"; };
+		84ADDA3A272C54BC005B86D6 /* FMDataBase.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FMDataBase.xcframework; path = ../ThirdPartyFramework/FMDataBase.xcframework; sourceTree = "<group>"; };
+		84ADDA3C272C54BC005B86D6 /* TZImagePickerController.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TZImagePickerController.xcframework; path = ../ThirdPartyFramework/TZImagePickerController.xcframework; sourceTree = "<group>"; };
+		84ADDA3D272C54BC005B86D6 /* AFNetworking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AFNetworking.xcframework; path = ../ThirdPartyFramework/AFNetworking.xcframework; sourceTree = "<group>"; };
+		84ADDA3E272C54BD005B86D6 /* IQKeyboardManager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IQKeyboardManager.xcframework; path = ../ThirdPartyFramework/IQKeyboardManager.xcframework; sourceTree = "<group>"; };
+		84ADDA3F272C54BD005B86D6 /* SDAutoLayout.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SDAutoLayout.xcframework; path = ../ThirdPartyFramework/SDAutoLayout.xcframework; sourceTree = "<group>"; };
+		84ADDA40272C54BD005B86D6 /* QiniuSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = QiniuSDK.xcframework; path = ../ThirdPartyFramework/QiniuSDK.xcframework; sourceTree = "<group>"; };
+		84ADDA41272C54BD005B86D6 /* SDWebImage.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SDWebImage.xcframework; path = ../ThirdPartyFramework/SDWebImage.xcframework; sourceTree = "<group>"; };
+		84ADDA42272C54BD005B86D6 /* ReactiveObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReactiveObjC.xcframework; path = ../ThirdPartyFramework/ReactiveObjC.xcframework; sourceTree = "<group>"; };
+		84ADDA43272C54BD005B86D6 /* RETableViewManager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RETableViewManager.xcframework; path = ../ThirdPartyFramework/RETableViewManager.xcframework; sourceTree = "<group>"; };
+		84ADDA44272C54BD005B86D6 /* MJRefresh.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MJRefresh.xcframework; path = ../ThirdPartyFramework/MJRefresh.xcframework; sourceTree = "<group>"; };
+		84ADDA62272C54DE005B86D6 /* KSPhotoBrowser.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KSPhotoBrowser.xcframework; path = ../ThirdPartyFramework/KSPhotoBrowser.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		843F542427229D2400AC6A27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84ADDA5D272C54BD005B86D6 /* RETableViewManager.xcframework in Frameworks */,
+				84ADDA4F272C54BD005B86D6 /* TZImagePickerController.xcframework in Frameworks */,
+				84ADDA59272C54BD005B86D6 /* SDWebImage.xcframework in Frameworks */,
+				84ADDA55272C54BD005B86D6 /* SDAutoLayout.xcframework in Frameworks */,
+				84ADDA5F272C54BD005B86D6 /* MJRefresh.xcframework in Frameworks */,
+				84ADD9E82727E15F005B86D6 /* AppTrackingTransparency.framework in Frameworks */,
+				84ADDA4B272C54BD005B86D6 /* FMDataBase.xcframework in Frameworks */,
+				84ADDA49272C54BD005B86D6 /* MBProgressHUD.xcframework in Frameworks */,
+				84ADDA5B272C54BD005B86D6 /* ReactiveObjC.xcframework in Frameworks */,
+				84ADDA47272C54BD005B86D6 /* YYKit.xcframework in Frameworks */,
+				84ADDA57272C54BD005B86D6 /* QiniuSDK.xcframework in Frameworks */,
+				84ADDA53272C54BD005B86D6 /* IQKeyboardManager.xcframework in Frameworks */,
+				84ADDA63272C54DE005B86D6 /* KSPhotoBrowser.xcframework in Frameworks */,
+				84ADDA51272C54BD005B86D6 /* AFNetworking.xcframework in Frameworks */,
+				84ADDA45272C54BD005B86D6 /* Masonry.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		843F541D27229D2400AC6A27 = {
+			isa = PBXGroup;
+			children = (
+				843F542927229D2400AC6A27 /* WTFoundation */,
+				843F542827229D2400AC6A27 /* Products */,
+				843F544E2722A01800AC6A27 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		843F542827229D2400AC6A27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				843F542727229D2400AC6A27 /* WTFoundation.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		843F542927229D2400AC6A27 /* WTFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				843F542A27229D2400AC6A27 /* WTFoundation.h */,
+				84ADD8932726548D005B86D6 /* WTDefine.h */,
+				84ADD8AE2726566E005B86D6 /* WTUIKitDefine.h */,
+				84ADD90327268341005B86D6 /* Controller */,
+				84ADD8F827268271005B86D6 /* WTLoadingView */,
+				84ADD8F1272681E7005B86D6 /* ImagePicker */,
+				84ADD8D727265BA1005B86D6 /* BaseCell */,
+				84ADD8D227265A6C005B86D6 /* NavBar */,
+				84ADD8B0272657E6005B86D6 /* WTFormView */,
+				84ADD895272654CA005B86D6 /* Alert */,
+				84ADD88E27265424005B86D6 /* Toast */,
+				84ADD88527264FD0005B86D6 /* WTProduct */,
+				84ADD85027264EC1005B86D6 /* WTNetworking */,
+				843F54BC2722C57900AC6A27 /* WTPhotoBrowser */,
+				843F54B72722C4D100AC6A27 /* QiuNiu */,
+				843F548A2722B38000AC6A27 /* DataBase */,
+				843F547D2722B2FA00AC6A27 /* Category */,
+				843F54782722B2DF00AC6A27 /* Reachability */,
+				843F545F2722B1CE00AC6A27 /* Utils */,
+				843F54552722B12600AC6A27 /* AppInfo */,
+				843F544727229F3400AC6A27 /* AppDelegate */,
+				843F542B27229D2400AC6A27 /* Info.plist */,
+			);
+			path = WTFoundation;
+			sourceTree = "<group>";
+		};
+		843F544727229F3400AC6A27 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				843F544927229F3400AC6A27 /* WTAppDelegate.h */,
+				843F544827229F3400AC6A27 /* WTAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		843F544E2722A01800AC6A27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84ADDA62272C54DE005B86D6 /* KSPhotoBrowser.xcframework */,
+				84ADDA3D272C54BC005B86D6 /* AFNetworking.xcframework */,
+				84ADDA3A272C54BC005B86D6 /* FMDataBase.xcframework */,
+				84ADDA3E272C54BD005B86D6 /* IQKeyboardManager.xcframework */,
+				84ADDA37272C54BC005B86D6 /* Masonry.xcframework */,
+				84ADDA39272C54BC005B86D6 /* MBProgressHUD.xcframework */,
+				84ADDA44272C54BD005B86D6 /* MJRefresh.xcframework */,
+				84ADDA40272C54BD005B86D6 /* QiniuSDK.xcframework */,
+				84ADDA42272C54BD005B86D6 /* ReactiveObjC.xcframework */,
+				84ADDA43272C54BD005B86D6 /* RETableViewManager.xcframework */,
+				84ADDA3F272C54BD005B86D6 /* SDAutoLayout.xcframework */,
+				84ADDA41272C54BD005B86D6 /* SDWebImage.xcframework */,
+				84ADDA3C272C54BC005B86D6 /* TZImagePickerController.xcframework */,
+				84ADDA38272C54BC005B86D6 /* YYKit.xcframework */,
+				84ADD9E72727E15F005B86D6 /* AppTrackingTransparency.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		843F54552722B12600AC6A27 /* AppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				843F54572722B12600AC6A27 /* WTAppInfo.h */,
+				843F54562722B12600AC6A27 /* WTAppInfo.m */,
+			);
+			path = AppInfo;
+			sourceTree = "<group>";
+		};
+		843F545F2722B1CE00AC6A27 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				84ADD8CF27265A0B005B86D6 /* WTImageUtil.h */,
+				84ADD8CE27265A0B005B86D6 /* WTImageUtil.m */,
+				84ADD8A7272655A2005B86D6 /* WTUIKitUtil.h */,
+				84ADD8A6272655A2005B86D6 /* WTUIKitUtil.m */,
+				84ADD8AA2726563A005B86D6 /* WTUIConstant.h */,
+				84ADD8AB2726563A005B86D6 /* WTUIConstant.m */,
+				84ADD8A327265573005B86D6 /* WTColorUtil.h */,
+				84ADD8A227265573005B86D6 /* WTColorUtil.m */,
+				843F54722722B29F00AC6A27 /* WTDateUtil.h */,
+				843F54712722B29F00AC6A27 /* WTDateUtil.m */,
+				843F54702722B29F00AC6A27 /* WTFile.h */,
+				843F54732722B29F00AC6A27 /* WTFile.m */,
+				843F546D2722B25700AC6A27 /* WTVersionUtil.h */,
+				843F546C2722B25700AC6A27 /* WTVersionUtil.m */,
+				843F54692722B22E00AC6A27 /* WTJsonUtil.h */,
+				843F54682722B22E00AC6A27 /* WTJsonUtil.m */,
+				843F54602722B1CE00AC6A27 /* WTStringUtil.h */,
+				843F54612722B1CE00AC6A27 /* WTStringUtil.m */,
+				843F54642722B20100AC6A27 /* WTCommonUtil.h */,
+				843F54652722B20100AC6A27 /* WTCommonUtil.m */,
+				843F545B2722B16500AC6A27 /* WTKeychainUUID.h */,
+				843F545C2722B16500AC6A27 /* WTKeychainUUID.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		843F54782722B2DF00AC6A27 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				843F547A2722B2DF00AC6A27 /* ZXReachability.h */,
+				843F54792722B2DF00AC6A27 /* ZXReachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		843F547D2722B2FA00AC6A27 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				84ADD90927268413005B86D6 /* UIButton+Style.h */,
+				84ADD90827268413005B86D6 /* UIButton+Style.m */,
+				843F547E2722B34100AC6A27 /* NSDate+Exts.h */,
+				843F54832722B34100AC6A27 /* NSDate+Exts.m */,
+				843F54822722B34100AC6A27 /* NSObject+UserInfo.h */,
+				843F547F2722B34100AC6A27 /* NSObject+UserInfo.m */,
+				843F54802722B34100AC6A27 /* NSString+WTRegex.h */,
+				843F54812722B34100AC6A27 /* NSString+WTRegex.m */,
+				84ADD8C72726596B005B86D6 /* UIView+Category.h */,
+				84ADD8C62726596B005B86D6 /* UIView+Category.m */,
+				84ADD8CB27265992005B86D6 /* UITextView+Placeholder.h */,
+				84ADD8CA27265992005B86D6 /* UITextView+Placeholder.m */,
+				84ADD8C227265930005B86D6 /* UIButton+WTWebImage.h */,
+				84ADD8C327265930005B86D6 /* UIButton+WTWebImage.m */,
+				84ADD8BF27265901005B86D6 /* UIImageView+WTWebImage.h */,
+				84ADD8BE27265901005B86D6 /* UIImageView+WTWebImage.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		843F548A2722B38000AC6A27 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				843F548B2722B38000AC6A27 /* WTDBHelper.h */,
+				843F548C2722B38000AC6A27 /* WTDBHelper.m */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		843F54B72722C4D100AC6A27 /* QiuNiu */ = {
+			isa = PBXGroup;
+			children = (
+				843F54B92722C4D100AC6A27 /* WTQiniuUpload.h */,
+				843F54B82722C4D100AC6A27 /* WTQiniuUpload.m */,
+			);
+			path = QiuNiu;
+			sourceTree = "<group>";
+		};
+		843F54BC2722C57900AC6A27 /* WTPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				843F54BF2722C57900AC6A27 /* WTKSPhotoBrowser.h */,
+				843F54BD2722C57900AC6A27 /* WTKSPhotoBrowser.m */,
+				843F54BE2722C57900AC6A27 /* WTKSPhotoItem.h */,
+				843F54C02722C57900AC6A27 /* WTKSPhotoItem.m */,
+			);
+			path = WTPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		84ADD85027264EC1005B86D6 /* WTNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				84ADD85B27264EC1005B86D6 /* WTNetworkingManager.h */,
+				84ADD86727264EC1005B86D6 /* WTNetworkingManager.m */,
+				84ADD85F27264EC1005B86D6 /* WTNetworkingRequest.h */,
+				84ADD85127264EC1005B86D6 /* WTNetworkingRequest.m */,
+				84ADD85227264EC1005B86D6 /* WTTokenTimeoutErrorDelegate.h */,
+				84ADD86027264EC1005B86D6 /* WTHTTPWebRequest+Private.h */,
+				84ADD85627264EC1005B86D6 /* WTTokenTimeoutCountable.h */,
+				84ADD85E27264EC1005B86D6 /* WTHTTPRequestHandler.h */,
+				84ADD85327264EC1005B86D6 /* WTHTTPRequestHandler.m */,
+				84ADD86427264EC1005B86D6 /* WTHTTPWebRequest.h */,
+				84ADD85427264EC1005B86D6 /* WTHTTPWebRequest.m */,
+				84ADD85527264EC1005B86D6 /* WTBaseHTTPService.h */,
+				84ADD86327264EC1005B86D6 /* WTBaseHTTPService.m */,
+				84ADD85727264EC1005B86D6 /* WTNetworkReachability.h */,
+				84ADD86227264EC1005B86D6 /* WTNetworkReachability.m */,
+				84ADD86127264EC1005B86D6 /* WTMultipartFormDataPrivate.h */,
+				84ADD85827264EC1005B86D6 /* WTMultipartFormDataPrivate.m */,
+				84ADD85927264EC1005B86D6 /* WTHTTPServiceConfiguration.h */,
+				84ADD86527264EC1005B86D6 /* WTHTTPServiceConfiguration.m */,
+				84ADD85A27264EC1005B86D6 /* WTURLSessionManager.h */,
+				84ADD86827264EC1005B86D6 /* WTURLSessionManager.m */,
+				84ADD86627264EC1005B86D6 /* WTHTTPRequestBuilder.h */,
+				84ADD85C27264EC1005B86D6 /* WTHTTPRequestBuilder.m */,
+				84ADD85D27264EC1005B86D6 /* WTMultipartFormData.h */,
+			);
+			path = WTNetworking;
+			sourceTree = "<group>";
+		};
+		84ADD88527264FD0005B86D6 /* WTProduct */ = {
+			isa = PBXGroup;
+			children = (
+				84ADD88727264FD0005B86D6 /* WTProduct.h */,
+				84ADD88827264FD0005B86D6 /* WTProductManager.h */,
+				84ADD88627264FD0005B86D6 /* WTProductManager.m */,
+			);
+			path = WTProduct;
+			sourceTree = "<group>";
+		};
+		84ADD88E27265424005B86D6 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				84ADD88F27265437005B86D6 /* WTToast.h */,
+				84ADD89027265437005B86D6 /* WTToast.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		84ADD895272654CA005B86D6 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				84ADD898272654CA005B86D6 /* WTAlertController.h */,
+				84ADD896272654CA005B86D6 /* WTAlertController.m */,
+				84ADD897272654CA005B86D6 /* WTAlertControllerTransition.h */,
+				84ADD899272654CA005B86D6 /* WTAlertControllerTransition.m */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		84ADD8B0272657E6005B86D6 /* WTFormView */ = {
+			isa = PBXGroup;
+			children = (
+				84ADD8B1272657E6005B86D6 /* WTFormView.h */,
+				84ADD8B2272657E6005B86D6 /* WTFormView.m */,
+			);
+			path = WTFormView;
+			sourceTree = "<group>";
+		};
+		84ADD8D227265A6C005B86D6 /* NavBar */ = {
+			isa = PBXGroup;
+			children = (
+				84ADD8D427265A6C005B86D6 /* WTCustomNavBar.h */,
+				84ADD8D327265A6C005B86D6 /* WTCustomNavBar.m */,
+			);
+			path = NavBar;
+			sourceTree = "<group>";
+		};
+		84ADD8D727265BA1005B86D6 /* BaseCell */ = {
+			isa = PBXGroup;
+			children = (
+				84ADD8E4272680D6005B86D6 /* WTEmptyDataCell.h */,
+				84ADD8E5272680D6005B86D6 /* WTEmptyDataCell.m */,
+				84ADD8DB27265BA1005B86D6 /* WTEmptyCell.h */,
+				84ADD8D827265BA1005B86D6 /* WTEmptyCell.m */,
+				84ADD8D927265BA1005B86D6 /* WTBaseCell.h */,
+				84ADD8DD27265BA1005B86D6 /* WTBaseCell.m */,
+			);
+			path = BaseCell;
+			sourceTree = "<group>";
+		};
+		84ADD8F1272681E7005B86D6 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				84ADD8F2272681E7005B86D6 /* WTImagePickerUtil.h */,
+				84ADD8F3272681E7005B86D6 /* WTImagePickerUtil.m */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		84ADD8F827268271005B86D6 /* WTLoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				84ADD8FA27268271005B86D6 /* WTLoadingView.h */,
+				84ADD8FC27268271005B86D6 /* WTLoadingView.m */,
+				84ADD8FB27268271005B86D6 /* WTFailedView.h */,
+				84ADD8F927268271005B86D6 /* WTFailedView.m */,
+			);
+			path = WTLoadingView;
+			sourceTree = "<group>";
+		};
+		84ADD90327268341005B86D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84ADD90C27268A7B005B86D6 /* WTViewController.h */,
+				84ADD90F27268A7C005B86D6 /* WTViewController.m */,
+				84ADD90D27268A7B005B86D6 /* WTFormViewController.h */,
+				84ADD90E27268A7C005B86D6 /* WTFormViewController.m */,
+				84ADD90427268357005B86D6 /* WTTabbarController.h */,
+				84ADD90527268357005B86D6 /* WTTabbarController.m */,
+				84ADD91527268C61005B86D6 /* WTWebViewController.h */,
+				84ADD91427268C61005B86D6 /* WTWebViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		843F542227229D2400AC6A27 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843F544B27229F3400AC6A27 /* WTAppDelegate.h in Headers */,
+				843F546B2722B22E00AC6A27 /* WTJsonUtil.h in Headers */,
+				843F545D2722B16500AC6A27 /* WTKeychainUUID.h in Headers */,
+				843F546F2722B25700AC6A27 /* WTVersionUtil.h in Headers */,
+				843F54622722B1CE00AC6A27 /* WTStringUtil.h in Headers */,
+				843F548D2722B38000AC6A27 /* WTDBHelper.h in Headers */,
+				843F54842722B34100AC6A27 /* NSDate+Exts.h in Headers */,
+				843F54882722B34100AC6A27 /* NSObject+UserInfo.h in Headers */,
+				84ADD87627264EC1005B86D6 /* WTHTTPRequestHandler.h in Headers */,
+				84ADD87927264EC1005B86D6 /* WTMultipartFormDataPrivate.h in Headers */,
+				84ADD87E27264EC1005B86D6 /* WTHTTPRequestBuilder.h in Headers */,
+				84ADD86A27264EC1005B86D6 /* WTTokenTimeoutErrorDelegate.h in Headers */,
+				84ADD87727264EC1005B86D6 /* WTNetworkingRequest.h in Headers */,
+				84ADD87827264EC1005B86D6 /* WTHTTPWebRequest+Private.h in Headers */,
+				84ADD86F27264EC1005B86D6 /* WTNetworkReachability.h in Headers */,
+				84ADD87127264EC1005B86D6 /* WTHTTPServiceConfiguration.h in Headers */,
+				84ADD87527264EC1005B86D6 /* WTMultipartFormData.h in Headers */,
+				84ADD86E27264EC1005B86D6 /* WTTokenTimeoutCountable.h in Headers */,
+				84ADD87C27264EC1005B86D6 /* WTHTTPWebRequest.h in Headers */,
+				84ADD87327264EC1005B86D6 /* WTNetworkingManager.h in Headers */,
+				84ADD87227264EC1005B86D6 /* WTURLSessionManager.h in Headers */,
+				84ADD86D27264EC1005B86D6 /* WTBaseHTTPService.h in Headers */,
+				843F54862722B34100AC6A27 /* NSString+WTRegex.h in Headers */,
+				843F54BB2722C4D100AC6A27 /* WTQiniuUpload.h in Headers */,
+				843F547C2722B2DF00AC6A27 /* ZXReachability.h in Headers */,
+				84ADD8B3272657E6005B86D6 /* WTFormView.h in Headers */,
+				84ADD89127265437005B86D6 /* WTToast.h in Headers */,
+				84ADD8A527265573005B86D6 /* WTColorUtil.h in Headers */,
+				84ADD89C272654CA005B86D6 /* WTAlertController.h in Headers */,
+				84ADD8A9272655A2005B86D6 /* WTUIKitUtil.h in Headers */,
+				84ADD8AC2726563A005B86D6 /* WTUIConstant.h in Headers */,
+				84ADD8942726548D005B86D6 /* WTDefine.h in Headers */,
+				84ADD8AF2726566E005B86D6 /* WTUIKitDefine.h in Headers */,
+				843F54C32722C57900AC6A27 /* WTKSPhotoBrowser.h in Headers */,
+				84ADD88C27264FD0005B86D6 /* WTProductManager.h in Headers */,
+				843F54C22722C57900AC6A27 /* WTKSPhotoItem.h in Headers */,
+				84ADD88B27264FD0005B86D6 /* WTProduct.h in Headers */,
+				84ADD8D127265A0B005B86D6 /* WTImageUtil.h in Headers */,
+				84ADD8E127265BA1005B86D6 /* WTEmptyCell.h in Headers */,
+				84ADD8E6272680D6005B86D6 /* WTEmptyDataCell.h in Headers */,
+				84ADD8DF27265BA1005B86D6 /* WTBaseCell.h in Headers */,
+				84ADD91727268C61005B86D6 /* WTWebViewController.h in Headers */,
+				84ADD91127268A7C005B86D6 /* WTFormViewController.h in Headers */,
+				84ADD8D627265A6C005B86D6 /* WTCustomNavBar.h in Headers */,
+				84ADD8C127265901005B86D6 /* UIImageView+WTWebImage.h in Headers */,
+				84ADD90B27268413005B86D6 /* UIButton+Style.h in Headers */,
+				84ADD91027268A7C005B86D6 /* WTViewController.h in Headers */,
+				84ADD8FE27268271005B86D6 /* WTLoadingView.h in Headers */,
+				84ADD8CD27265992005B86D6 /* UITextView+Placeholder.h in Headers */,
+				84ADD8F4272681E7005B86D6 /* WTImagePickerUtil.h in Headers */,
+				84ADD8FF27268271005B86D6 /* WTFailedView.h in Headers */,
+				84ADD8C427265930005B86D6 /* UIButton+WTWebImage.h in Headers */,
+				84ADD8C92726596B005B86D6 /* UIView+Category.h in Headers */,
+				843F54762722B29F00AC6A27 /* WTDateUtil.h in Headers */,
+				843F54742722B29F00AC6A27 /* WTFile.h in Headers */,
+				84ADD90627268357005B86D6 /* WTTabbarController.h in Headers */,
+				843F54592722B12600AC6A27 /* WTAppInfo.h in Headers */,
+				843F54662722B20100AC6A27 /* WTCommonUtil.h in Headers */,
+				843F542C27229D2400AC6A27 /* WTFoundation.h in Headers */,
+				84ADD89B272654CA005B86D6 /* WTAlertControllerTransition.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		843F542627229D2400AC6A27 /* WTFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 843F542F27229D2400AC6A27 /* Build configuration list for PBXNativeTarget "WTFoundation" */;
+			buildPhases = (
+				843F542227229D2400AC6A27 /* Headers */,
+				843F542327229D2400AC6A27 /* Sources */,
+				843F542427229D2400AC6A27 /* Frameworks */,
+				843F542527229D2400AC6A27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WTFoundation;
+			productName = WTFoundation;
+			productReference = 843F542727229D2400AC6A27 /* WTFoundation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		843F541E27229D2400AC6A27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					843F542627229D2400AC6A27 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 843F542127229D2400AC6A27 /* Build configuration list for PBXProject "WTFoundation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 843F541D27229D2400AC6A27;
+			productRefGroup = 843F542827229D2400AC6A27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				843F542627229D2400AC6A27 /* WTFoundation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		843F542527229D2400AC6A27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		843F542327229D2400AC6A27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84ADD87D27264EC1005B86D6 /* WTHTTPServiceConfiguration.m in Sources */,
+				84ADD89D272654CA005B86D6 /* WTAlertControllerTransition.m in Sources */,
+				843F54BA2722C4D100AC6A27 /* WTQiniuUpload.m in Sources */,
+				84ADD8C027265901005B86D6 /* UIImageView+WTWebImage.m in Sources */,
+				84ADD91227268A7C005B86D6 /* WTFormViewController.m in Sources */,
+				843F548E2722B38000AC6A27 /* WTDBHelper.m in Sources */,
+				84ADD87027264EC1005B86D6 /* WTMultipartFormDataPrivate.m in Sources */,
+				843F54582722B12600AC6A27 /* WTAppInfo.m in Sources */,
+				84ADD8FD27268271005B86D6 /* WTFailedView.m in Sources */,
+				84ADD8F5272681E7005B86D6 /* WTImagePickerUtil.m in Sources */,
+				843F54632722B1CE00AC6A27 /* WTStringUtil.m in Sources */,
+				843F54C12722C57900AC6A27 /* WTKSPhotoBrowser.m in Sources */,
+				843F546E2722B25700AC6A27 /* WTVersionUtil.m in Sources */,
+				84ADD8DE27265BA1005B86D6 /* WTEmptyCell.m in Sources */,
+				84ADD88A27264FD0005B86D6 /* WTProductManager.m in Sources */,
+				843F54772722B29F00AC6A27 /* WTFile.m in Sources */,
+				84ADD90727268357005B86D6 /* WTTabbarController.m in Sources */,
+				843F54892722B34100AC6A27 /* NSDate+Exts.m in Sources */,
+				84ADD88027264EC1005B86D6 /* WTURLSessionManager.m in Sources */,
+				84ADD87A27264EC1005B86D6 /* WTNetworkReachability.m in Sources */,
+				843F547B2722B2DF00AC6A27 /* ZXReachability.m in Sources */,
+				84ADD87F27264EC1005B86D6 /* WTNetworkingManager.m in Sources */,
+				84ADD8D027265A0B005B86D6 /* WTImageUtil.m in Sources */,
+				84ADD8A427265573005B86D6 /* WTColorUtil.m in Sources */,
+				84ADD90027268271005B86D6 /* WTLoadingView.m in Sources */,
+				84ADD8C82726596B005B86D6 /* UIView+Category.m in Sources */,
+				84ADD87427264EC1005B86D6 /* WTHTTPRequestBuilder.m in Sources */,
+				843F54672722B20100AC6A27 /* WTCommonUtil.m in Sources */,
+				84ADD90A27268413005B86D6 /* UIButton+Style.m in Sources */,
+				84ADD8D527265A6C005B86D6 /* WTCustomNavBar.m in Sources */,
+				84ADD89227265437005B86D6 /* WTToast.m in Sources */,
+				84ADD8CC27265992005B86D6 /* UITextView+Placeholder.m in Sources */,
+				84ADD87B27264EC1005B86D6 /* WTBaseHTTPService.m in Sources */,
+				84ADD8A8272655A2005B86D6 /* WTUIKitUtil.m in Sources */,
+				84ADD8AD2726563A005B86D6 /* WTUIConstant.m in Sources */,
+				84ADD86927264EC1005B86D6 /* WTNetworkingRequest.m in Sources */,
+				843F544A27229F3400AC6A27 /* WTAppDelegate.m in Sources */,
+				843F546A2722B22E00AC6A27 /* WTJsonUtil.m in Sources */,
+				843F54C42722C57900AC6A27 /* WTKSPhotoItem.m in Sources */,
+				84ADD91327268A7C005B86D6 /* WTViewController.m in Sources */,
+				84ADD8C527265930005B86D6 /* UIButton+WTWebImage.m in Sources */,
+				843F54852722B34100AC6A27 /* NSObject+UserInfo.m in Sources */,
+				84ADD86C27264EC1005B86D6 /* WTHTTPWebRequest.m in Sources */,
+				843F54752722B29F00AC6A27 /* WTDateUtil.m in Sources */,
+				84ADD8E7272680D6005B86D6 /* WTEmptyDataCell.m in Sources */,
+				84ADD8B4272657E6005B86D6 /* WTFormView.m in Sources */,
+				843F54872722B34100AC6A27 /* NSString+WTRegex.m in Sources */,
+				84ADD89A272654CA005B86D6 /* WTAlertController.m in Sources */,
+				84ADD86B27264EC1005B86D6 /* WTHTTPRequestHandler.m in Sources */,
+				843F545E2722B16500AC6A27 /* WTKeychainUUID.m in Sources */,
+				84ADD91627268C61005B86D6 /* WTWebViewController.m in Sources */,
+				84ADD8E327265BA1005B86D6 /* WTBaseCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		843F542D27229D2400AC6A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		843F542E27229D2400AC6A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		843F543027229D2400AC6A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = WTFoundation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jienliang.aaa.WTFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		843F543127229D2400AC6A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = WTFoundation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jienliang.aaa.WTFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		843F542127229D2400AC6A27 /* Build configuration list for PBXProject "WTFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				843F542D27229D2400AC6A27 /* Debug */,
+				843F542E27229D2400AC6A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		843F542F27229D2400AC6A27 /* Build configuration list for PBXNativeTarget "WTFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				843F543027229D2400AC6A27 /* Debug */,
+				843F543127229D2400AC6A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 843F541E27229D2400AC6A27 /* Project object */;
+}
